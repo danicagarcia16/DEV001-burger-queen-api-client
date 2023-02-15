@@ -1,0 +1,37 @@
+.container-login{
+    height: 500px!important;
+    background-color: 	#F5F5F5;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#form_login{
+    width: 100%;
+}
+
+.input-Login{
+    width: 40%;
+    border: 1px solid lightgray!important;
+    border-radius: 5%;
+    padding: 20px 20px;
+}
+
+#form_login div:first-child .input-Login{
+margin-bottom: 1rem;
+}
+
+.login-submit{
+background-color: #D0D0D0;
+border: none;
+color: black;
+font-weight: 600;
+font-size: 1rem;
+padding: 15px 40px;
+}
+
+::placeholder{
+    color: lightgray;
+    text-align: left;
+    
+}

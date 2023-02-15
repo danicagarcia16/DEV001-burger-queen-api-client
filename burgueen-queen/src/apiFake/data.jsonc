@@ -1,0 +1,31 @@
+{
+    "users": [
+      {
+        "id": "001",
+        "name": "Danica García",
+        "email": "a.mesero@burger.queen",
+        "password": "123456",
+        "roles": {
+          "waiter": true
+        }
+      },
+      {
+        "id": "002",
+        "name": "Sofia Rodriguez",
+        "email": "a.cocinero@burger.queen",
+        "password": "123456",
+        "roles": {
+          "chef": true
+        }
+      },
+      {
+        "id": "003",
+        "name": "Diandra Guerrero",
+        "email": "a.admin@burger.queen",
+        "password": "123456",
+        "roles": {
+          "admin": true
+        }
+      }
+    ]
+}

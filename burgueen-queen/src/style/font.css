@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'AmsiPro-BlackItalic';
+    src:  url('../font/FontsFree-Net-AmsiPro-BlackItalic.ttf') format('truetype');
+  }
+
+ p,
+ ::placeholder,
+ .login-submit{
+    font-family: 'AmsiPro-BlackItalic';
+ } 
+
+ .flex-burguer{
+    display: flex;
+}

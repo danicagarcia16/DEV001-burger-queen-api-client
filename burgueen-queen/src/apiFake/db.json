@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+    
+      "name": "Luana",
+      "email": "lu.mesero@burger.queen",
+      "password": "$2a$10$ljHxEU5nSbmiCEOypf.RsOXLo.1K/q/TiWEQfgd24LOQyfNasvlra",
+      "id": "6EoASzD",
+      "roles": {
+        "waiter": true
+      
+      }
+    },
+    {
+      "id": "002",
+      "name": "Sofia Rodriguez",
+      "email": "Sofia.cocinero@burger.queen",
+      "password": "123456",
+      "roles": {
+        "chef": true
+      }
+    },
+    {
+      "id": "003",
+      "name": "Diandra Guerrero",
+      "email": "Diandra.admin@burger.queen",
+      "password": "123456",
+      "roles": {
+        "admin": true
+      }
+    },
+    {
+      "id": "004",
+      "name": "Danica Oj",
+      "email": "t.mesero@burger.queen",
+      "password": "12345",
+      "roles": {
+        "waiter": true
+      }
+    },
+    {
+      "email": "lu.mesero@burger.queen",
+      "password": "$2a$10$ljHxEU5nSbmiCEOypf.RsOXLo.1K/q/TiWEQfgd24LOQyfNasvlra",
+      "id": "6EoASzD",
+      "roles": {
+        "waiter": true
+      }
+    }
+  ]
+}

@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { Header } from '../componentes/Header';
+import { Modal } from '../componentes/Modal';
 import logo from '../images/logo.png';
 import '../style/login.css';
 import '../style/font.css';
+import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
+
 
 
 export const Login = () => {
 
-    // Para capturar los imputs
-    const [miLogin, setLogin] = useState('False');
+    const navigate = useNavigate();
+    //Para capturar los imputs
+    const [miLogin, setLogin] = useState(false);
     const [usu, setUsu] = useState('');
     const [pas, setPas] = useState('');
+    //Para error 
+    const [errorModal, setErrorModal] = useState(false);
+
 
     function iniciarsesión(e) {
         e.preventDefault();
@@ -20,11 +28,13 @@ export const Login = () => {
             alert('Complete los datos para ingresar')
         } else {
             if (usu === ".mesero@burger.queen" && pas === '123456') {
-                setLogin('true')
-                document.getElementById('form_login').style.display = 'none';
+                setLogin(true)
+                navigate('/Mesero');
             } else {
-                setLogin('false');
-                alert('Error de usuario y/o contraseña')
+                setLogin(false);
+                setErrorModal(true);
+
+
                 document.getElementById('txtusu').value = '';
                 document.getElementById('txtpas').value = '';
                 document.getElementById('txtusu').focus();
@@ -33,6 +43,14 @@ export const Login = () => {
     }
     return (
         <>
+            <Modal
+                estado={errorModal}
+                cambiarEstado={setErrorModal}
+            >
+                <Contenido>
+                    <p>Error de usuario y/o contraseña</p>
+                </Contenido>
+            </Modal>
             <Header />
             <div className="container-login flex-burguer" >
                 <img src={logo} className='logo' alt='' style={{ width: '120px' }} />
@@ -47,10 +65,23 @@ export const Login = () => {
                     </div><br />
                     <input type="submit" className="btn btn-primary login login-submit" value="Ingresar" onClick={iniciarsesión} />
                 </form>
-                <a href="">¿Olvidaste tu contraseña?</a>
+                <a href="/">¿Olvidaste tu contraseña?</a>
             </div >
+
         </>
 
     )
 }
+const Contenido = styled.div`
+display: flex;
+flex-direction: column;
+align-itmes: center;
+
+p{
+    font-size:30px;
+    font-weight:500;
+    color: #151A5E;
+    
+
+}`
 

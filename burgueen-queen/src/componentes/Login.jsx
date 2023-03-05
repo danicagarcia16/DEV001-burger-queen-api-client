@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Header } from '../componentes/Header';
 import { Modal } from '../componentes/Modal';
 import logo from '../images/logo.png';
@@ -6,12 +6,20 @@ import '../style/login.css';
 import '../style/font.css';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { postUser } from "../apiFake/apiFunctions/postUser";
 
 
 
 export const Login = () => {
 
+    const getToken = localStorage.getItem("token");
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if (getToken) {
+            navigate("/Mesero");
+        }
+    })
     //Para capturar los imputs
     const [miLogin, setLogin] = useState(false);
     const [usu, setUsu] = useState('');

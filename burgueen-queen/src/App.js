@@ -12,6 +12,7 @@ function App() {
     <Routes>
       <Route exact path= "/login" element={<Login/>}/>
       <Route exact path= "/mesero" element={<Mesero/>}/>
+      
     </Routes>
     </BrowserRouter>
     </div>

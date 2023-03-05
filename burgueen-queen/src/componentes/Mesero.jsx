@@ -1,10 +1,12 @@
 import React from 'react'
 import { Header } from '../componentes/Header';
 import '../style/mesero.css';
+import CustomerForm from './CustomerForm/CustomerForm';
 
 
 
 export const Mesero = () => {
+
     return (
         <>
             <Header />
@@ -13,7 +15,8 @@ export const Mesero = () => {
                     <div className="row">
                         <div className="col-md-7">
                             <p>1) Nombre del cliente</p>
-                            <imput type="text" placeholder="Nombre del cliente" className="customer color-6 mr-5" value="ggg" required />
+                            <CustomerForm
+                            />
                             <p>2) Toma de pedidos </p>
 
 

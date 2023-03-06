@@ -1,14 +1,12 @@
 {
   "users": [
     {
-    
       "name": "Luana",
       "email": "lu.mesero@burger.queen",
       "password": "$2a$10$ljHxEU5nSbmiCEOypf.RsOXLo.1K/q/TiWEQfgd24LOQyfNasvlra",
       "id": "6EoASzD",
       "roles": {
         "waiter": true
-      
       }
     },
     {
@@ -29,22 +27,100 @@
         "admin": true
       }
     },
+   
     {
-      "id": "004",
-      "name": "Danica Oj",
-      "email": "t.mesero@burger.queen",
-      "password": "12345",
+      "name": "Esther Guerrero",
+      "email": "tere.cocinero@burger.queen",
+      "password": "$2a$10$XMyJpKo2svgHSTC.DPq1Aefuso7/LHci3S1eo5Tx26/rc5n96ppMm",
+      "id": "uYEwQ3Q",
       "roles": {
         "waiter": true
       }
     },
+    { "name":"Danica Diandra",
+      "email": "dani.mesero@burger.queen",
+      "password": "$2a$10$Sd.g4OTgcCuOChz.oHvAhe5m.A0pZzEV7TEKwHdHCoUN9xTLcx7W.",
+      "id": "HZXuACm"
+    }
+  ],
+  "products": [
     {
-      "email": "lu.mesero@burger.queen",
-      "password": "$2a$10$ljHxEU5nSbmiCEOypf.RsOXLo.1K/q/TiWEQfgd24LOQyfNasvlra",
-      "id": "6EoASzD",
-      "roles": {
-        "waiter": true
-      }
+      "id": 1,
+      "name": "Cafe Americano",
+      "price": 5,
+      "type": "breakfast",
+      "dateEntry": ""
+    },
+    {
+      "id": 2,
+      "name": "Cafe con Leche",
+      "price": 7,
+      "type": "breakfast",
+      "dateEntry": ""
+    },
+    {
+      "id": 3,
+      "name": "Jugo Natural",
+      "price": 7,
+      "type": "breakfast",
+      "dateEntry": ""
+    },
+    {
+      "id": 4,
+      "name": "sandwich de Queso",
+      "price": 10,
+      "type": "breakfast",
+      "dateEntry": ""
+    },
+    {
+      "id": 5,
+      "name": "Agua 500 ml",
+      "price": 5,
+      "type": "drinks",
+      "dateEntry": ""
+    },
+    {
+      "id": 6,
+      "name": "Agua 750 ml",
+      "price": 7,
+      "type": "drinks",
+      "dateEntry": ""
+    },
+    {
+      "id": 7,
+      "name": "Gaseosa 500 ml",
+      "price": 7,
+      "type": "drinks",
+      "dateEntry": ""
+    },
+    {
+      "id": 8,
+      "name": "Soda 750 ml",
+      "price": 10,
+      "type": "drinks",
+      "dateEntry": ""
+    },
+    {
+      "id": 9,
+      "name": "Hamburguesa Clasica",
+      "price": 10,
+      "type": "dinner",
+      "dateEntry": ""
+    },
+    {
+      "id": 10,
+      "name": "Hamburguesa Doble",
+      "price": 15,
+      "type": "dinner",
+      "dateEntry": ""
+    },
+    {
+      "id": 11,
+      "name": "Papas Fritas",
+      "price": 5,
+      "type": "other",
+      "dateEntry": "",
+      "menu": "dinner"
     }
   ]
 }

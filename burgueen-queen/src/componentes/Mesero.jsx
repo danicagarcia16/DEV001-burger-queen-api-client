@@ -2,10 +2,17 @@ import React from 'react'
 import { Header } from '../componentes/Header';
 import '../style/mesero.css';
 import CustomerForm from './CustomerForm/CustomerForm';
+import axios from 'axios';
 
 
 
 export const Mesero = () => {
+    const reqApi = async () => {
+        const URL = "http://localhost:8080/products";
+        const api = axios.get(URL);
+
+        console.log(api)
+    };
 
     return (
         <>
@@ -15,14 +22,13 @@ export const Mesero = () => {
                     <div className="row">
                         <div className="col-md-7">
                             <p>1) Nombre del cliente</p>
-                            <CustomerForm
-                            />
+                            <CustomerForm />
                             <p>2) Toma de pedidos </p>
 
 
                             <div>
                                 <div className="main-buttons mb3">
-                                    <button className="menu-button">Desayuno</button>
+                                    <button onClick={reqApi} className="menu-button">Desayuno</button>
                                     <button className="menu-button">Almuerzo</button>
                                 </div>
                             </div>

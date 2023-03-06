@@ -6,7 +6,7 @@ import '../style/login.css';
 import '../style/font.css';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { postUser } from "../apiFake/apiFunctions/postUser";
+
 
 
 

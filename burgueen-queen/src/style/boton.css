@@ -1,0 +1,72 @@
+.card {
+    max-height: 530px;
+    box-sizing: border-box;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: initial;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: initial;
+}
+table {
+    border-collapse: collapse;
+}
+ :after, :before {
+    box-sizing: border-box;
+}
+  .card-body .btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 1.5em auto;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+  
+
+.menu-button {
+    background: #001f5e;
+    color: #ffffff;
+    border: 2px solid #001f5e;
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 1.5em auto;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+  }
+  .menu-button:hover {
+    background-color: #85c136;
+    border: 2px solid #85c136;
+    color: #001f5e;
+  }
+  
+  .menu-button:disabled {
+    background-color: #d3d3d3;
+    color: #ffffff;
+    border: 2px solid #d3d3d3;
+  }

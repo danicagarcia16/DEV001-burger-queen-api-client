@@ -1,11 +1,4 @@
-.container .customer {
-    display: inline;
-    }
-    
-    .main-buttons {
-      display: flex;
-      justify-content: center;
-    }
+
 
     button.menu-buttons {
         display: inline-block;
@@ -49,7 +42,7 @@
         width: 160px;
         height: 130px;
         text-align: center;
-        text-align: center;
+        flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -58,9 +51,17 @@
         white-space: pre-wrap;
         font-size: 1em;
         margin: 6px;
+        cursor: pointer;
+      }
+      .containerdos:hover{
+       
+          background-color: #85c136;
+          border: 2px solid #85c136;
+          color: #001f5e;
       }
       .buttons-menu-sacar{
         background-color: transparent;
+        border: transparent;
       }
       .cliente{
         margin-right: 45rem;
@@ -71,3 +72,6 @@
        flex-direction: column;
 
       }
+      *, :after, :before {
+        box-sizing: border-box;
+    }

@@ -8,7 +8,7 @@ export const Header = () => {
             <div className='banner-container flex-burguer'>
                 <div className='banner-container-1 flex-burguer'>
                     <img src={logo} className='logo' alt='' style={{ width: '90px' }} />
-                    <p>Burgueen Queen</p>
+                    <p>Burguer Queen</p>
                 </div>
             </div>
         </>

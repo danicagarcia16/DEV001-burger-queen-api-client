@@ -13,6 +13,7 @@ import SendOrder from './SendOrder/SendOrder';
 export const Mesero = () => {
     const [products, setProduct] = useState(null)
     const [almuerzo, setAlmuerzo] = useState(null)
+    const [isalmuerzo, setIsalmuerzo] = useState(false)
     const url2 = "http://localhost:8080/almuerzo/";
     const url = "http://localhost:8080/products/";
     const reqApi = async () => {
@@ -21,6 +22,7 @@ export const Mesero = () => {
         console.log('respuesta', respuesta)
 
         setProduct(respuesta)
+        setIsalmuerzo(false)
 
         // .then(response => console.log('response.json()', response.json()))
     };
@@ -29,6 +31,7 @@ export const Mesero = () => {
         const respuesta2 = await api2.json()
         console.log(respuesta2)
         setAlmuerzo(respuesta2)
+        setIsalmuerzo(true)
     };
 
 
@@ -47,17 +50,17 @@ export const Mesero = () => {
                                 <div className="main-buttons mb3">
                                     <div clasName='mover'>
                                         <button onClick={reqApi} className="menu-button" >Desayuno</button>
-                                        {products ? (<TakeOrderButtons products={products} />) :
+                                        {/*{products ? (<TakeOrderButtons products={products} />) :
                                             <>
                                                 <p className='elija'>Elija un menú para ver los items disponibles</p>
-                                            </>}
+    </>}*/}
 
 
                                         <button onClick={reqApi2} className="menu-button">Almuerzo</button>
-                                        {almuerzo ? (<TakeOrder almuerzo={almuerzo} />) :
-                                            <>
-                                                <p className='elija'></p>
-                                            </>}
+                                        {isalmuerzo ? (<TakeOrder almuerzo={almuerzo} />) :
+
+                                            (<TakeOrderButtons products={products} />)
+                                        }
 
                                     </div>
                                 </div>

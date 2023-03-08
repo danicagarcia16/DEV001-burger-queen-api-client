@@ -1,6 +1,8 @@
 import React from 'react'
 import {useState} from 'react'
 import '../../style/imput.css';
+import ValorInput from '../ValorInput/ValorInput';
+
 
 export default function CustomerForm() {
     const [texto , setTexto] =useState('')
@@ -23,6 +25,7 @@ export default function CustomerForm() {
               className="container  customer col-6 mr-5"
             />
             </form>
+            <ValorInput texto={texto}/>
           </section>
         );
       }

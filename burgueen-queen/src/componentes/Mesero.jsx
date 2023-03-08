@@ -6,6 +6,7 @@ import { useState } from 'react';
 import TakeOrderButtons from './TakeOrderButtons/TakeOrderButtons';
 import TakeOrder from './TakeOrderButtons/TakeOrder';
 import SendOrder from './SendOrder/SendOrder';
+import ValorInput from './ValorInput/ValorInput';
 
 
 
@@ -22,7 +23,6 @@ export const Mesero = () => {
         console.log('respuesta', respuesta)
 
         setProduct(respuesta)
-        setIsalmuerzo(false)
 
         // .then(response => console.log('response.json()', response.json()))
     };
@@ -31,7 +31,6 @@ export const Mesero = () => {
         const respuesta2 = await api2.json()
         console.log(respuesta2)
         setAlmuerzo(respuesta2)
-        setIsalmuerzo(true)
     };
 
 
@@ -50,17 +49,17 @@ export const Mesero = () => {
                                 <div className="main-buttons mb3">
                                     <div clasName='mover'>
                                         <button onClick={reqApi} className="menu-button" >Desayuno</button>
-                                        {/*{products ? (<TakeOrderButtons products={products} />) :
+                                        {products ? (<TakeOrderButtons products={products} />) :
                                             <>
                                                 <p className='elija'>Elija un menú para ver los items disponibles</p>
-    </>}*/}
+                                            </>}
 
 
                                         <button onClick={reqApi2} className="menu-button">Almuerzo</button>
-                                        {isalmuerzo ? (<TakeOrder almuerzo={almuerzo} />) :
-
-                                            (<TakeOrderButtons products={products} />)
-                                        }
+                                        {almuerzo ? (<TakeOrder almuerzo={almuerzo} />) :
+                                            <>
+                                                <p className='elija'></p>
+                                            </>}
 
                                     </div>
                                 </div>
@@ -69,6 +68,7 @@ export const Mesero = () => {
                         </div>
                         <div className="col-md-5 mt-3">
                             <p>3) Verifica el pedido</p>
+                            <ValorInput />
                             <SendOrder />
 
                         </div>

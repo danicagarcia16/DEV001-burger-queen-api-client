@@ -19,12 +19,18 @@ p {
     margin-bottom: 1rem;
 }
 .table {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 1rem;
     background-color: initial;
 }
 table {
     border-collapse: collapse;
+}
+.tableclase{
+    display: flex;
+    flex-direction: column;
 }
  :after, :before {
     box-sizing: border-box;

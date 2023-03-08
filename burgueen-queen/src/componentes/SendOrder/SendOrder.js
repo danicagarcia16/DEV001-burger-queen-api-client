@@ -1,19 +1,23 @@
 import React from 'react'
 import '../../style/boton.css'
 
+
 export default function SendOrder() {
+
+
   return (
     <div>
          <div className ='card'>
         <div className="card-body pb-0">
-          <p className="card-tittle">Cliente:</p>
+         
         </div>
         <div className="card-body order">
-          
+         
             <table className="table">
               <thead>
-                <tr>
+                <tr className='tableclase'>
                   <th>#</th>
+                  <hr/>
                   <th>Items</th>
                   <th>Acción</th>
                 </tr>
